@@ -22,7 +22,10 @@
     </div>
   </div>
 
-  <div class="lightbox-image-container">
+    <div class="lightbox-image-container" ng-if="Lightbox.loading">
+        <center>Chargement...</center>
+    </div>
+  <div class="lightbox-image-container" ng-if="!Lightbox.loading">
     <!-- caption -->
     <div class="lightbox-image-caption">
       <span>{{Lightbox.imageCaption}}</span>
