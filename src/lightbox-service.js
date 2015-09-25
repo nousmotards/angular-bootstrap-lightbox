@@ -373,9 +373,10 @@ angular.module('bootstrapLightbox').provider('Lightbox', function () {
      * @memberOf bootstrapLightbox.Lightbox
      */
     Lightbox.prevImage = function () {
-        if(Lightbox.images.length > 0)
+        if(Lightbox.images.length > 0){
             Lightbox.setImage((Lightbox.index - 1 + Lightbox.images.length) %
                 Lightbox.images.length);
+        }
     };
 
     /**
@@ -385,8 +386,9 @@ angular.module('bootstrapLightbox').provider('Lightbox', function () {
      * @memberOf bootstrapLightbox.Lightbox
      */
     Lightbox.nextImage = function () {
-      if(Lightbox.images.length > 0)
-        Lightbox.setImage((Lightbox.index + 1) % Lightbox.images.length);
+      if(Lightbox.images.length > 0){
+          Lightbox.setImage((Lightbox.index + 1) % Lightbox.images.length);
+      }
     };
 
     /**
