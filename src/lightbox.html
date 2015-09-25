@@ -7,7 +7,7 @@
     <button class="close" aria-hidden="true" ng-click="$dismiss()">×</button>
 
     <div class="btn-group">
-      <a class="btn btn-xs btn-default" ng-click="Lightbox.prevImage()">
+      <a class="btn btn-xs btn-default" ng-click="Lightbox.prevImage()" ng-if="Lightbox.images.length">
         ‹ Précédent
       </a>
 
@@ -16,7 +16,7 @@
         Ouvrir
       </a>
 
-      <a class="btn btn-xs btn-default" ng-click="Lightbox.nextImage()">
+      <a class="btn btn-xs btn-default" ng-click="Lightbox.nextImage()" ng-if="Lightbox.images.length">
         Suivant ›
       </a>
     </div>
